@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* ================= LIGHT MODE ================= */
+
+:root {
+  --background: linear-gradient(to bottom, #ffffff, #fefcf3);
+  --foreground: #333333;
+  --muted: #6b7280;
+
+  --secondary: #fbbf24;
+  --accent: #00585e;
+  --teal: #48b1bf;
+
+  --neutral-warm: #f5ebdd;
+  --neutral-gray: #d1d5db;
+
+  /* --hero-image: #d97706; */
+  --hero-image: #0d9488;
+  /* --hero-image: #192d57; */
+  /* --hero-image: #ca8a04; */
+
+  /* CHANGED: Card background for light mode (White) */
+  --card-bg: #ffffff;
+
+  /* CHANGED: Reverse image for light mode (Dark Teal) */
+  --reverse-image: #00585e;
+
+  --head-btn-border: #121212;
+}
+
+/* ================= DARK MODE ================= */
+
+.dark {
+  --background: #121212;
+  --foreground: #e0e0e0;
+  --muted: #9ca3af;
+
+  --secondary: #fbbf24;
+  --accent: #009688;
+  --teal: #004d40;
+
+  --neutral-slate: #1e293b;
+  --neutral-charcoal: #0f172a;
+
+  --hero-image: #009688;
+  --card-bg: #009687ce;
+  --reverse-image: #fbbf24;
+
+  --head-btn-border: #ffffff1a;
+}
+
+/* ================= BASE ================= */
+
+@layer base {
+  html,
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)];
+  }
+}
